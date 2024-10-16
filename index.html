@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmalonly Consulting</title>
+    <!-- <link rel="stylesheet" href="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    
+</head>
+<body>
+    <div class="background-fullscreen" style="background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), 
+            url(color.png)">
+
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="/" class="company text-white text-2xl font-bold">Ajmalonly Consulting</a>
+            
+            <!-- Menu Items (hidden on small screens, flex on large screens) -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="/" class="link">Home</a></li>
+                <li><a href="/about.html" class="link">About</a></li>
+                <li><a href="/products.html" class="link">Products</a></li>
+                <li><a href="/contact.html" class="link">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Menu (visible on small screens) -->
+            <button id="menu-toggle" class="block md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default, shown when toggled) -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <ul class="space-y-4 p-4">
+                <li><a href="/" class="text-gray-300 hover:text-white block">Home</a></li>
+                <li><a href="/about.html" class="text-gray-300 hover:text-white block">About</a></li>
+                <li><a href="/products.html" class="text-gray-300 hover:text-white block">Products</a></li>
+                <li><a href="/contact.html" class="text-gray-300 hover:text-white block">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mx-auto flex flex-col items-center justify-center h-full">
+        <h1 class="title text-white text-4xl font-bold text-center">We build products that people love using</h1>
+        <p class="sub text-gray-300 text-center mt-4"><strong>Ajmalonly Consulting</strong> is a product studio focusing on web and mobile app development. Our mission is to make the world more efficient, beautiful, and connected.</p>
+        <a href="/services" class="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Get Started</a>
+    </div>
+
+    <!-- about us -->
+    <div class="container mx-auto flex flex-col items-center justify-center h-full">
+        <h1 class="title text-white text-4xl font-bold text-center">About Us</h1>
+        <p class="sub text-gray-300 text-center mt-4">Ajmalonly Consulting is a product studio focusing on web and mobile app development. Our mission is to make the world more efficient, beautiful, and connected.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+        integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+        crossorigin="anonymous"></script>
+<!-- Ripples -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"
+        integrity="sha512-zuZ5wVszlsRbRF/vwXD0QS/tHzBYHFzCD/BT0lI3yrWhNZFWDkkF3KPEY//WTanqxwPdZkskQ+xZo0rnfHBc5A=="
+        crossorigin="anonymous"></script>
+
+<script>
+  // Initialize the ripple effect
+  $(document).ready(function() {
+    $('.background-fullscreen').ripples({
+      resolution: 512, // Adjusts the ripple resolution for better quality
+      dropRadius: 20, // The radius of each ripple drop in pixels
+      perturbance: 0.04, // Controls the ripple intensity
+      interactive: true, // Enables ripples on mouse interaction
+    });
+  });
+
+
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+</script>
+
+      
+      
+    
+</body>
+</html>

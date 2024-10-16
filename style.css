@@ -1,0 +1,84 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+.background-fullscreen {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-size: cover; /* Make sure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Ensures no margin/padding on the body */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: Manrope;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px; /* 125% */
+    letter-spacing: -1px;
+}
+
+.sub {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 22.5px; /* 125% */
+    letter-spacing: -0.2px;
+}
+
+.link {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 22.5px; /* 125% */
+    letter-spacing: -0.5px;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+
+.company {
+    color: #FFF;
+    font-feature-settings: 'dlig' on;
+    font-family: Manrope;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.5px; /* 125% */
+    letter-spacing: -0.5px;
+}
+
+
+.about {
+    color: #FFF;
+    font-feature-settings: 'dlig' on;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 22.5px; /* 125% */
+    letter-spacing: -0.2px;
+}
