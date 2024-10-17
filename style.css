@@ -103,3 +103,47 @@ body, html {
 }
 
 
+/* Styles for the contact info card */
+.contact-info-card {
+    background-color: rgba(102, 51, 153, 0.9); /* Dark purple background */
+    color: white;
+    border-radius: 0.75rem; /* Rounded corners */
+    padding: 1.5rem; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 400px; /* Optional: set a max width */
+    margin: 0 auto; /* Center it horizontally */
+}
+
+/* Headline (H2) styling */
+.contact-info-card h2 {
+    font-size: 1.75rem; /* Increase the size of the headline */
+    font-weight: 700; /* Bold font */
+    margin-bottom: 1.25rem; /* Spacing below the headline */
+    font-family: Manrope;
+}
+
+/* Style for each contact detail */
+.contact-info-card p {
+    font-size: 1.2rem; /* Increase text size */
+    margin-bottom: 1rem; /* Add space between lines */
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Font Awesome icons */
+.contact-info-card i {
+    font-size: 1.5rem; /* Larger icon size */
+    margin-right: 0.75rem; /* Space between icon and text */
+}
+
+/* Link styling for email, phone, address */
+.contact-info-card a {
+    font-size: 1.2rem; /* Larger font for links */
+    color: #f472b6; /* Pinkish color for the links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.contact-info-card a:hover {
+    color: #f9a8d4; /* Lighter pink on hover */
+}
